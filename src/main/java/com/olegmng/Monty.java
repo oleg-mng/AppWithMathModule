@@ -27,8 +27,9 @@ public class Monty {
         System.out.println("Количество побед после смены выбора : " + switchWins);
         System.out.println("Количество побед оставшись : " + stayWins);
 
-        String s1 = "\nКоличество побед после смены выбора : " + switchWins;
-        String s2 = "\nКоличество побед оставшись : " + switchWins;
+        String s1 = String.format("\nКоличество побед после смены выбора : %d", switchWins);
+        String s2 = String.format("\nКоличество побед оставшись : %d", stayWins);
+
 
         File fileM = new File("/Users/olegmonogarov/IdeaProjects/AppWithMathModule/src/main/java/com/olegmng/m.txt");
         writeFile(fileM, s1);
